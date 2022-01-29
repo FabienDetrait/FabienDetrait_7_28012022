@@ -13,7 +13,7 @@ exports.signup = (req, res, next) => {
                 admin: false,
             })
             .then(() => res.status(201).json({ message: 'Utilisateur créé !' }))
-            .catch(error => res.status(400).json({ errormessage: 'déjà créé' }));
+            .catch(error => res.status(400).json({ errormessage: 'Utilisateur existe déjà' }));
          })
         .catch(error => res.status(500).json({ error }));
 };
