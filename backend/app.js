@@ -4,6 +4,7 @@ const helmet = require('helmet');
 const path = require('path');
 const userRoutes = require('./routes/user');
 const publicationRoutes = require('./routes/publication');
+const commentRoutes = require('./routes/comment');
 
 // Permettre toutes demandes de toutes origines d'accéder à notre API
 app.use((req, res, next) => {
@@ -20,5 +21,6 @@ app.use('/images', express.static(path.join(__dirname, 'images')));
 
 app.use('/api/auth', userRoutes);
 app.use('/api/publication', publicationRoutes);
+app.use('/api/comment', commentRoutes);
 
 module.exports = app;

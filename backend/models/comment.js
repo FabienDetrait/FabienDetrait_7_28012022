@@ -5,6 +5,14 @@ const Comment = sequelize.define("comment", {
     content: {
         type: Sequelize.TEXT,
         allowNull: false
+    },
+    userId: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    },
+    publicationId: {
+        type: Sequelize.INTEGER,
+        allowNull: false
     }
 });
 
