@@ -12,7 +12,7 @@ const Publication = sequelize.define("publication", {
     },
     image: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: true
     },
     userId: {
         type: Sequelize.INTEGER,
