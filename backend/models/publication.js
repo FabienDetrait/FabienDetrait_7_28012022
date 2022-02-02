@@ -18,11 +18,10 @@ const Publication = sequelize.define("publication", {
         type: Sequelize.INTEGER,
         allowNull: false
     },
-    
-    // like: {
-    //     type: Sequelize.INTEGER,
-    //     allowNull: false
-    // },
+    like: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+    }
     // usersLiked: {
     //     type: Sequelize.STRING,
     //     allowNull: false,
